@@ -22,7 +22,7 @@
     "ai-assistant",
     "typescript"
   ],
-  "author": "Satadru Bhowmik (https://github.com/sagacious-satadru?tab=repositories)",
+  "author": "Satadru Bhowmik (https://github.com/sagacious-satadru)",
   "license": "MIT",
   "dependencies": {
     "@ai-sdk/openai": "^2.0.0",
