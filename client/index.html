@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔬 Smart Research Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🔬 Smart Research Assistant</h1>
+        <p>Powered by Pica MCP + OpenAI Deep Research</p>
+      </header>
+
+      <div class="status-bar" id="statusBar">
+        <span id="connectionStatus">Checking connection...</span>
+      </div>
+
+      <main>
+        <div class="input-section">
+          <textarea
+            id="queryInput"
+            placeholder="Ask me to research something and take action...
+
+Examples:
+🔍 Research latest AI trends and create a GitHub issue
+📧 Find competitors for my product and email me a summary  
+📊 Research market data and save to Google Sheets
+🚀 Search for Node.js best practices and update my documentation"
+            rows="6"
+          ></textarea>
+
+          <div class="options-section">
+            <div class="option-group">
+              <label for="githubRepo">📂 GitHub Repository (optional):</label>
+              <input
+                type="text"
+                id="githubRepo"
+                placeholder="username/repository-name or just repository-name"
+                class="repo-input"
+              />
+              <small>Leave empty to use default test repository</small>
+            </div>
+          </div>
+
+          <button id="submitBtn" class="primary-btn">
+            <span id="btnText">Research & Act</span>
+            <span id="btnSpinner" class="spinner hidden">⏳</span>
+          </button>
+        </div>
+
+        <div class="results-section">
+          <div id="results" class="results-container">
+            <div class="welcome-message">
+              <h3>🎯 Ready for AI-Powered Research & Action!</h3>
+              <p>
+                This assistant combines
+                <strong>OpenAI's deep research capabilities</strong> with
+                <strong>Pica's 70+ integrations</strong> to research topics and
+                automatically take actions like creating GitHub issues.
+              </p>
+              <div class="features">
+                <div class="feature">
+                  <span class="feature-icon">🔬</span>
+                  <span>Deep Research with OpenAI</span>
+                </div>
+                <div class="feature">
+                  <span class="feature-icon">🚀</span>
+                  <span>Automatic GitHub Issue Creation</span>
+                </div>
+                <div class="feature">
+                  <span class="feature-icon">⚡</span>
+                  <span>Real-time Progress Updates</span>
+                </div>
+                <div class="feature">
+                  <span class="feature-icon">🔗</span>
+                  <span>70+ Platform Integrations</span>
+                </div>
+              </div>
+              <p>
+                <strong>Try asking:</strong> "Research the latest TypeScript
+                features and create a GitHub issue with implementation tasks"
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

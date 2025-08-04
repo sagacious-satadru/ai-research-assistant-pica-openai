@@ -1,0 +1,49 @@
+{
+  "name": "pica_mcp_experiment",
+  "version": "1.0.0",
+  "description": "Smart Research Assistant with Pica MCP and OpenAI",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch server/index.ts",
+    "dev:old": "ts-node --esm server/index.ts",
+    "pica-mcp": "npx @picahq/pica-mcp",
+    "dev-with-pica": "concurrently \"npm run pica-mcp\" \"npm run dev\"",
+    "type-check": "tsc --noEmit",
+    "clean": "if exist dist rmdir /s /q dist",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "pica",
+    "openai",
+    "mcp",
+    "ai-assistant",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@ai-sdk/openai": "^2.0.0",
+    "@picahq/pica-mcp": "^3.2.0",
+    "ai": "^5.0.0",
+    "axios": "^1.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "openai": "^5.11.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.1.0",
+    "concurrently": "^9.2.0",
+    "dotenv-cli": "^10.0.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  }
+}
